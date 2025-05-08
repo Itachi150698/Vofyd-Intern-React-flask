@@ -1,0 +1,219 @@
+@import "fontsfamily-function";
+// Font family Variables
+@each $fontfamily, $themeroot in $fontfamilyfunction {
+    @each $key, $value in $themeroot {
+      .#{$fontfamily}-#{$key} {
+        font-family: var(--vf-#{$fontfamily}-#{$key});
+      }
+    }
+  }
+//Font function
+@import "fonts-function";
+//Font Size Variables
+@each $fontsize, $themeroot in $fontsizefunction {
+    @each $key, $value in $themeroot {
+      .#{$fontsize}-#{$key} {
+        font-size: var(--vf-#{$fontsize}-#{$key});
+      }
+    }
+  }
+
+  @import "fontsweight-function";
+  //Font weight Variables
+@each $fontweight, $themeroot in $fontweightfunction {
+    @each $key, $value in $themeroot {
+      .font-#{$fontweight}-#{$key} {
+            font-weight: var(--vf-#{$fontweight}-#{$key});
+      }
+    }
+  }
+
+//Font Size Responsive Variables
+@each $breakpoint, $width in $breakpoints {
+    $bpname: '';
+    @if $breakpoint == small { $bpname: 'sm'; }
+    @if $breakpoint == medium { $bpname: 'md'; }
+    @if $breakpoint == large { $bpname: 'lg'; }
+
+    @media only screen and (min-width: #{$width}) {
+    @each $fontsize, $themeroot in $fontsizefunction {
+      @each $key, $value in $themeroot {
+        .#{$bpname}-#{$fontsize}-#{$key} {
+          font-size: var(--vf-#{$fontsize}-#{$key});
+        }
+      }
+    }
+  }
+  }
+//End font function -----------------------------------------------------!
+
+//Line Height function -----------------------------------------------------!
+@import "line-height-function";
+@each $lineheight, $themeroot in $lineheightfunction {
+    @each $key, $value in $themeroot {
+      .#{$lineheight}-#{$key} {
+        line-height: var(--vf-#{$lineheight}-#{$key});
+      }
+    }
+  }
+//end line height function -----------------------------------------------------!
+
+//Border Radius  function -----------------------------------------------------!
+@import "border-radius-function";
+@each $borderradius, $themeroot in $borderradiusfunction {
+    @each $key, $value in $themeroot {
+      .b-#{$borderradius}-#{$key} {
+        border-radius: var(--vf-#{$borderradius}-#{$key});
+      }
+    }
+  }
+//end Border Radius function -----------------------------------------------------!
+
+//Height function -----------------------------------------------------!
+@import "height-function";
+@each $height, $themeroot in $heightfunction {
+    @each $key, $value in $themeroot {
+      .#{$height}-#{$key} {
+        height: var(--vf-#{$height}-#{$key});
+      }
+    }
+  }
+//end height function -----------------------------------------------------!
+
+//Width function -----------------------------------------------------!
+@import "width-function";
+@each $width, $themeroot in $widthfunction {
+    @each $key, $value in $themeroot {
+      .#{$width}-#{$key} {
+        width: var(--vf-#{$width}-#{$key});
+      }
+    }
+  }
+//end width function -----------------------------------------------------!
+
+//border-color function -----------------------------------------------------!
+// @import "bordercolor-function";
+// @each $bordercolor, $themeroot in $bordercolorfunction {
+//     @each $key, $value in $themeroot {
+//       .b-color-#{$bordercolor}-#{$key} {
+//         border-color: var(--vf-#{$bordercolor}-#{$key});
+//       }
+//     }
+//   }
+
+  //End border-color function -----------------------------------------------------!
+
+//border-style function -----------------------------------------------------!
+@import "borderstyle-function";
+@each $borderstyle, $themeroot in $borderstylefunction {
+    @each $key, $value in $themeroot {
+      .#{$borderstyle}-#{$key} {
+        border-style: var(--vf-#{$borderstyle}-#{$key});
+      }
+    }
+  }
+//End border-style function -----------------------------------------------------!
+
+//border-width function -----------------------------------------------------!
+@import "borderwidth-function";
+@each $borderwidth, $themeroot in $borderwidthfunction {
+    @each $key, $value in $themeroot {
+      .border-#{$borderwidth}-#{$key} {
+        border-width: var(--vf-#{$borderwidth}-#{$key});
+      }
+    }
+  }
+//End border-width function -----------------------------------------------------!
+
+//Gap function -----------------------------------------------------!
+@import "gap-function";
+@each $gap, $themeroot in $gapfunction {
+    @each $key, $value in $themeroot {
+      .#{$gap}-#{$key} {
+        gap: var(--vf-#{$gap}-#{$key});
+      }
+    }
+  }
+//End Gap function -----------------------------------------------------!
+
+//box-shadow function -----------------------------------------------------!
+@import "boxshadow-function";
+@each $boxshadow, $themeroot in $boxshadowfunction {
+    @each $key, $value in $themeroot {
+      .b-#{$boxshadow}-#{$key} {
+        box-shadow: var(--vf-#{$boxshadow}-#{$key});
+      }
+    }
+  }
+//End border-color function -----------------------------------------------------!
+
+//object-fit function -----------------------------------------------------!
+@import "objectfit-function";
+@each $objectfit, $themeroot in $objectfitfunction {
+    @each $key, $value in $themeroot {
+      .#{$objectfit}-#{$key} {
+        object-fit: var(--vf-#{$objectfit}-#{$key});
+      }
+    }
+  }
+//End object-fit function -----------------------------------------------------!
+
+//Flex function -----------------------------------------------------!
+@import "flex-function";
+@each $flex, $themeroot in $flexfunction {
+    @each $key, $value in $themeroot {
+      .#{$flex}-#{$key} {
+        flex: var(--vf-#{$flex}-#{$key});
+      }
+    }
+  }
+//End flex function -----------------------------------------------------!
+
+//Color function -----------------------------------------------------!
+//End border-color function -----------------------------------------------------!
+
+//Color function -----------------------------------------------------!
+//End border-color function -----------------------------------------------------!
+
+//bg function -----------------------------------------------------!
+// @import "colors-function";
+
+// @each $colors, $themeroot in $colorsfunction {
+//   @each $key, $value in $themeroot {
+//     .color-#{$colors}-#{$key} {
+//         color: var(--vf-#{$colors}-#{$key});
+//     }
+//   }
+// }
+//End bg function -----------------------------------------------------!
+
+//Color function -----------------------------------------------------!
+
+// @import "colors-function";
+
+// @each $colors, $themeroot in $colorsfunction {
+//   @each $key, $value in $themeroot {
+//     .color-#{$colors}-#{$key} {
+//       color: var(--vf-#{$colors}-#{$key});
+//     }
+//   }
+// }
+//end color function -----------------------------------------------------!
+
+//Hover function -----------------------------------------------------!
+@import "hover-function";
+// @each $hover, $themeroot in $hoverfunction {
+//     @each $key, $value in $themeroot {
+//       .hover\:color-#{$hover}-#{$key}:hover {
+//         color: var(--vf-#{$hover}-#{$key});
+//       }
+//     }
+//   }
+//   @each $hover, $themeroot in $hoverfunction {
+//     @each $key, $value in $themeroot {
+//       .hover\:bg-#{$hover}-#{$key}:hover {
+//         background-color: var(--vf-#{$hover}-#{$key});
+//       }
+//     }
+//   }
+//end hover function -----------------------------------------------------!

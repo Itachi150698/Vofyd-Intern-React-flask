@@ -1,0 +1,61 @@
+.sidebar {
+  height: calc(100vh - 82px);
+  width: 180px;
+  padding: 10px 14px;
+}
+.sidebar ul li {
+  list-style: none;
+  margin-bottom: 2px;
+}
+.sidebar ul li a {
+  display: flex;
+  padding: 2px 3px;
+  align-items: center;
+  color: #0D111D;
+  gap: 7px;
+  font-size: 14px;
+  position: relative;
+}
+.sidebar ul li a:hover, .sidebar ul li a.active {
+  background-color: #53668B;
+  color: #fff;
+}
+.sidebar ul li a:hover:after, .sidebar ul li a.active:after {
+  position: absolute;
+  content: "";
+  right: -2px;
+  top: 12px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: hsla(0, 0%, 100%, 0) hsla(0, 0%, 100%, 0) hsla(0, 0%, 100%, 0) rgb(255, 255, 255);
+}
+.sidebar ul li a:hover .fea-analytics-icon, .sidebar ul li a.active .fea-analytics-icon {
+  background-image: url(../../../assets/images/icons/fa-analytics-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-vehicles-icon, .sidebar ul li a.active .fea-vehicles-icon {
+  background-image: url(../../../assets/images/icons/fa-vehicles-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-rates-icon, .sidebar ul li a.active .fea-rates-icon {
+  background-image: url(../../../assets/images/icons/fa-rates-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-fuel-icon, .sidebar ul li a.active .fea-fuel-icon {
+  background-image: url(../../../assets/images/icons/fa-fuel-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-maintenance-icon, .sidebar ul li a.active .fea-maintenance-icon {
+  background-image: url(../../../assets/images/icons/fa-maintenance-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-expense-icon, .sidebar ul li a.active .fea-expense-icon {
+  background-image: url(../../../assets/images/icons/fa-expense-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-staffs-icon, .sidebar ul li a.active .fea-staffs-icon {
+  background-image: url(../../../assets/images/icons/fa-staffs-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-finance-icon, .sidebar ul li a.active .fea-finance-icon {
+  background-image: url(../../../assets/images/icons/fa-finance-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-routes-icon, .sidebar ul li a.active .fea-routes-icon {
+  background-image: url(../../../assets/images/icons/fa-routes-white-icon.svg);
+}
+.sidebar ul li a:hover .fea-reports-icon, .sidebar ul li a.active .fea-reports-icon {
+  background-image: url(../../../assets/images/icons/fa-reports-white-icon.svg);
+}/*# sourceMappingURL=sidebar.css.map */

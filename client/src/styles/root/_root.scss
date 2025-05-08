@@ -1,0 +1,153 @@
+
+
+@import "fontsfamily-function";
+@import "fonts-function";
+@import "fontsweight-function";
+@import "colors-function";
+// @import "hover-function";
+@import "line-height-function";
+@import "border-radius-function";
+@import "height-function";
+@import "width-function";
+// @import "bordercolor-function";
+@import "borderstyle-function";
+@import "borderwidth-function";
+@import "gap-function";
+@import "boxshadow-function";
+@import "objectfit-function";
+@import "flex-function";
+
+:root{
+
+      // Root Font family Variables
+  @each $fontfamily, $themeroot in $fontfamilyfunction {
+    @each $key, $value in $themeroot {
+      $keyname: "--vf-#{$fontfamily}-#{$key}";
+      #{$keyname}: #{$value};
+    }
+  }
+    //Root Font Size Variables
+    @each $fontsize, $themeroot in $fontsizefunction{
+        @each $key, $value in $themeroot {
+            $keyname: "--vf-" + $fontsize + "-" + $key;
+            #{$keyname}: #{$value};
+        }
+    }
+
+    //Root Font weight Variables
+    @each $fontweight, $themeroot in $fontweightfunction{
+        @each $key, $value in $themeroot {
+            $keyname: "--vf-" + $fontweight + "-" + $key;
+            #{$keyname}: #{$value};
+        }
+    }
+
+    //Root Line Height Variables
+    @each $lineheight, $themeroot in $lineheightfunction {
+        @each $key, $value in $themeroot {
+            $keyname: "--vf-" + $lineheight + "-" + $key;
+            #{$keyname}: #{$value};
+        }
+    }
+
+    //Root Border Radius Variables
+    @each $borderradius, $themeroot in $borderradiusfunction {
+        @each $key, $value in $themeroot {
+          $keyname: "--vf-" + $borderradius + "-" + $key;
+          #{$keyname}: #{$value};
+        }
+    }
+
+    //Root border-color Variables
+    // @each $bordercolor, $themeroot in $bordercolorfunction {
+    //     @each $key, $value in $themeroot {
+    //       $keyname: "--vf-" + $bordercolor + "-" + $key;
+    //       #{$keyname}: #{$value};
+    //     }
+    // }
+
+    //Root border-style Variables
+    @each $borderstyle, $themeroot in $borderstylefunction {
+        @each $key, $value in $themeroot {
+          $keyname: "--vf-" + $borderstyle + "-" + $key;
+          #{$keyname}: #{$value};
+        }
+    }
+
+    //Root border-width Variables
+    @each $borderwidth, $themeroot in $borderwidthfunction {
+        @each $key, $value in $themeroot {
+          $keyname: "--vf-" + $borderwidth + "-" + $key;
+          #{$keyname}: #{$value};
+        }
+    }
+
+    //Root gap Variables
+    @each $gap, $themeroot in $gapfunction {
+        @each $key, $value in $themeroot {
+          $keyname: "--vf-" + $gap + "-" + $key;
+          #{$keyname}: #{$value};
+        }
+    }
+
+    // Root box-shadow Variables
+  @each $boxshadow, $themeroot in $boxshadowfunction {
+    @each $key, $value in $themeroot {
+      $keyname: "--vf-" + $boxshadow + "-" + $key;
+      #{$keyname}: #{$value};
+    }
+  }
+
+  // Root object-fit Variables
+  @each $objectfit, $themeroot in $objectfitfunction {
+    @each $key, $value in $themeroot {
+      $keyname: "--vf-" + $objectfit + "-" + $key;
+      #{$keyname}: #{$value};
+    }
+  }
+
+  // Root Colors Variables
+  @each $flex, $themeroot in $flexfunction {
+    @each $key, $value in $themeroot {
+        $keyname: "--vf-" + $flex + "-" + $key;
+        #{$keyname}: #{$value};
+    }
+}
+
+    // Root Colors Variables
+    // @each $colors, $themeroot in $colorsfunction {
+    //     @each $key, $value in $themeroot {
+    //         $keyname: "--vf-" + $colors + "-" + $key;
+    //         #{$keyname}: #{$value};
+    //     }
+    // }
+
+    // Root Hover Variables
+    // @each $hover, $themeroot in $hoverfunction {
+    //     @each $key, $value in $themeroot {
+    //         $keyname: "--vf-" + $hover + "-" + $key;
+    //         #{$keyname}: #{$value};
+    //     }
+    // }
+    //Root Height Variables
+    @each $height, $themeroot in $heightfunction {
+        @each $key, $value in $themeroot {
+          $keyname: "--vf-" + $height + "-" + $key;
+          #{$keyname}: #{$value};
+        }
+    }
+
+    //Root Height Variables
+    @each $width, $themeroot in $widthfunction {
+        @each $key, $value in $themeroot {
+          $keyname: "--vf-" + $width + "-" + $key;
+          #{$keyname}: #{$value};
+        }
+    }
+
+}
+
+@import "variables";
+
+
+

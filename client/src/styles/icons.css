@@ -1,0 +1,88 @@
+.feathers {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.feathers.fea-sidebar-icon {
+  width: 30px;
+  height: 33px;
+  min-width: 30px;
+}
+.feathers.fea-15 {
+  width: 15px;
+  height: 19px;
+  min-width: 15px;
+}
+.feathers.fea-3-17 {
+  width: 3px;
+  height: 17px;
+  min-width: 3;
+}
+.feathers.fea-26 {
+  width: 26px;
+  height: 16px;
+  min-width: 26px;
+}
+.feathers.fea-27 {
+  width: 27px;
+  height: 27px;
+  min-width: 27px;
+  background-size: 16px;
+}
+.feathers.fea-50 {
+  width: 50px;
+  height: 28px;
+  min-width: 50px;
+}
+.feathers.fea-analytics-icon {
+  background-image: url(../assets/images/icons/fa-analytics-icon.svg);
+}
+.feathers.fea-vehicles-icon {
+  background-image: url(../assets/images/icons/fa-vehicles-icon.svg);
+}
+.feathers.fea-rates-icon {
+  background-image: url(../assets/images/icons/fa-rates-icon.svg);
+}
+.feathers.fea-fuel-icon {
+  background-image: url(../assets/images/icons/fa-fuel-icon.svg);
+}
+.feathers.fea-maintenance-icon {
+  background-image: url(../assets/images/icons/fa-maintenance-icon.svg);
+}
+.feathers.fea-expense-icon {
+  background-image: url(../assets/images/icons/fa-expense-icon.svg);
+}
+.feathers.fea-staffs-icon {
+  background-image: url(../assets/images/icons/fa-staffs-icon.svg);
+}
+.feathers.fea-finance-icon {
+  background-image: url(../assets/images/icons/fa-finance-icon.svg);
+}
+.feathers.fea-routes-icon {
+  background-image: url(../assets/images/icons/fa-routes-icon.svg);
+}
+.feathers.fea-reports-icon {
+  background-image: url(../assets/images/icons/fa-reports-icon.svg);
+}
+.feathers.fea-search-icon {
+  background-image: url(../assets/images/icons/fea-search-icon.svg);
+}
+.feathers.fea-add-icon {
+  background-image: url(../assets/images/icons/fea-add-icon.svg);
+}
+.feathers.fea-filter-icon {
+  background-image: url(../assets/images/icons/fea-filter-icon.svg);
+}
+.feathers.fea-g-report-icon {
+  background-image: url(../assets/images/icons/fea-g-report-icon.svg);
+}
+.feathers.fea-vehicle01-icon {
+  background-image: url(../assets/images/icons/fea-vehicle01-icon.svg);
+}
+.feathers.fa-dotted-icon {
+  background-image: url(../assets/images/icons/fa-dotted-icon.svg);
+}
+.feathers.fa-menu-icon {
+  background-image: url(../assets/images/icons/fa-menu-icon.svg);
+}/*# sourceMappingURL=icons.css.map */

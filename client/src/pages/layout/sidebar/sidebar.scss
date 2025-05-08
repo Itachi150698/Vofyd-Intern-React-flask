@@ -1,0 +1,82 @@
+.sidebar {
+    height: calc(100vh - 82px);
+    width: 180px;
+    padding: 10px 14px;
+
+    ul {
+
+        li {
+            list-style: none;
+            margin-bottom: 2px;
+
+            a {
+                display: flex;
+                padding: 7px 8px;
+                align-items: center;
+                color: #0D111D;
+                gap: 11px;
+                font-size: 14px;
+                position: relative;
+
+                &:hover{
+                    background-color: #f1f1f1;
+                    color: #212529;
+                }
+                &.active {
+                    background-color: #53668B;
+                    color: #fff;
+
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        right: -2px;
+                        top: 12px;
+                        border-style: solid;
+                        border-width: 7px;
+                        border-color: hsl(0deg 0% 100% / 0%) hsl(0deg 0% 100% / 0%) hsl(0deg 0% 100% / 0%) rgb(255, 255, 255);
+                    }
+
+                    .fea-analytics-icon {
+                        background-image: url(../../../assets/images/icons/fa-analytics-white-icon.svg);
+                    }
+
+                    .fea-vehicles-icon {
+                        background-image: url(../../../assets/images/icons/fa-vehicles-white-icon.svg);
+                    }
+
+                    .fea-rates-icon {
+                        background-image: url(../../../assets/images/icons/fa-rates-white-icon.svg);
+                    }
+
+                    .fea-fuel-icon {
+                        background-image: url(../../../assets/images/icons/fa-fuel-white-icon.svg);
+                    }
+
+                    .fea-maintenance-icon {
+                        background-image: url(../../../assets/images/icons/fa-maintenance-white-icon.svg);
+                    }
+
+                    .fea-expense-icon {
+                        background-image: url(../../../assets/images/icons/fa-expense-white-icon.svg);
+                    }
+
+                    .fea-staffs-icon {
+                        background-image: url(../../../assets/images/icons/fa-staffs-white-icon.svg);
+                    }
+
+                    .fea-finance-icon {
+                        background-image: url(../../../assets/images/icons/fa-finance-white-icon.svg);
+                    }
+
+                    .fea-routes-icon {
+                        background-image: url(../../../assets/images/icons/fa-routes-white-icon.svg);
+                    }
+
+                    .fea-reports-icon {
+                        background-image: url(../../../assets/images/icons/fa-reports-white-icon.svg);
+                    }
+                }
+            }
+        }
+    }
+}

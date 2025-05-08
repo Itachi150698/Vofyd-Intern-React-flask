@@ -1,0 +1,25 @@
+$breakpoints: (
+  small: 640px,
+  medium: 768px,
+  large: 1024px,
+);
+
+$fontsizefunction: (
+  text: (
+    xxs: 0.625, //10
+    xs: 0.75rem, //12
+    sm: 0.875rem, //14
+    base: 1rem, //16
+    lg: 1.125rem, //18
+    19: 1.188rem, //19
+    xl: 1.313rem, //21
+    1xl: 1.563rem, //25
+    2xl: 1.75rem, //28
+    3xl: 1.875rem, //30
+    4xl: 2.25rem, //36
+    5xl: 2.5rem, //40
+    6xl: 3.75rem, //60
+  ),
+);
+
+
